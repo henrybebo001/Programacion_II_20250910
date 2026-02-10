@@ -1,0 +1,34 @@
+@SystemAdminAPI_HostAddress = http://localhost:5202
+
+GET {{SystemAdminAPI_HostAddress}}/api/admin/
+Accept: application/json
+
+
+###
+
+POST {{SystemAdminAPI_HostAddress}}/api/admin/
+Content-Type: application/json
+
+{
+  "name": "richard",
+  "email": "richard@gmail.com",
+  "password": "richardl1234"                                                        
+}
+
+###
+
+
+PUT {{SystemAdminAPI_HostAddress}}/api/admin/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "licey",
+  "email": "licey@gmail.com",
+  "password": "licey1234"                                                         
+}
+
+###
+
+DELETE {{SystemAdminAPI_HostAddress}}/api/admin/7
+Content-Type: application/json
