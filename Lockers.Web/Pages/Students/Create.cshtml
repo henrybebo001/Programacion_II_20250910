@@ -1,0 +1,33 @@
+﻿@page
+@model Lockers.Web.Pages.Students.CreateModel
+@{
+    ViewData["Title"] = "New Student";
+}
+
+<div class="container mt-4" style="max-width:600px;">
+    <h2 style="color:white; font-weight:700;"><i class="fas fa-user-plus me-2"></i>New Student</h2>
+    <div style="background:#16213e; border-radius:16px; padding:30px; border:1px solid rgba(108,99,255,0.3);">
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label" style="color:#a0a0b0;">Full Name</label>
+                <input asp-for="Student.Name" class="form-control bg-dark text-white border-secondary" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color:#a0a0b0;">Student ID</label>
+                <input asp-for="Student.StudentId" class="form-control bg-dark text-white border-secondary" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color:#a0a0b0;">Grade</label>
+                <input asp-for="Student.Grade" class="form-control bg-dark text-white border-secondary" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color:#a0a0b0;">Email</label>
+                <input asp-for="Student.Email" class="form-control bg-dark text-white border-secondary" />
+            </div>
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn-primary-custom">Save</button>
+                <a href="/Students" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

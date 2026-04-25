@@ -1,0 +1,83 @@
+﻿@page
+@model Lockers.Web.Pages.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+<div class="hero">
+    <div class="container">
+        <h1><i class="fas fa-lock"></i> Locker Control System</h1>
+        <p>Manage school lockers, students, assignments and incidents efficiently</p>
+        <a href="/LockersPages" class="btn-primary-custom">
+            <i class="fas fa-arrow-right me-2"></i>Get Started
+        </a>
+    </div>
+</div>
+<div class="stats-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-door-closed"></i>
+                    <h3>Locker List</h3>
+                    <p>Manage availability</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Students</h3>
+                    <p>Register students</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Assignments</h3>
+                    <p>Track assignments</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Incidents</h3>
+                    <p>Report incidents</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-section">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color:white; font-weight:700;">Quick Access</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <a href="/LockersPages" class="menu-card">
+                    <div class="icon-wrapper"><i class="fas fa-door-closed"></i></div>
+                    <h4>Locker List</h4>
+                    <p>View and manage all lockers and their availability status</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Students" class="menu-card">
+                    <div class="icon-wrapper"><i class="fas fa-user-graduate"></i></div>
+                    <h4>Students</h4>
+                    <p>Register and manage student information</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Assignments" class="menu-card">
+                    <div class="icon-wrapper"><i class="fas fa-clipboard-list"></i></div>
+                    <h4>Assignments</h4>
+                    <p>Assign lockers to students and track renewals</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/Incidents" class="menu-card">
+                    <div class="icon-wrapper"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h4>Incidents</h4>
+                    <p>Report and manage locker incidents</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@page
+@model Lockers.Web.Pages.LockersPages.DeleteModel
+@{
+    ViewData["Title"] = "Delete Locker";
+}
+
+<div class="container mt-4" style="max-width:600px;">
+    <h2 style="color:white; font-weight:700;"><i class="fas fa-trash me-2"></i>Delete Locker</h2>
+    <div style="background:#16213e; border-radius:16px; padding:30px; border:1px solid rgba(255,50,50,0.3);">
+        <p style="color:#a0a0b0;">Are you sure you want to delete this locker?</p>
+        <table class="table table-dark">
+            <tr><th>Number</th><td>@Model.Locker.Number</td></tr>
+            <tr><th>Location</th><td>@Model.Locker.Location</td></tr>
+            <tr><th>Size</th><td>@Model.Locker.Size</td></tr>
+            <tr><th>Status</th><td>@Model.Locker.Status</td></tr>
+        </table>
+        <form method="post">
+            <input type="hidden" name="id" value="@Model.Locker.Id" />
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                <a href="/LockersPages" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

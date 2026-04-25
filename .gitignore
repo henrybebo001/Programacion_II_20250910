@@ -1,0 +1,33 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docview
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.sqlite
+
+# Binary files
+*.bin
+*.dll
+*.pdb
+*.exe
+
+# NuGet
+*.nupkg
+packages/
+
+# Publish output
+publish/
